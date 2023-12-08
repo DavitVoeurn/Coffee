@@ -354,10 +354,156 @@ header.sticky{
 }
 
 
-
+/* 
 @media(max-width:980px){
     header{
         padding: 20px 3%;
         transition: .4s;
+    }
+} */
+/* Add a general styling for small screens */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .navmenu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: none;
+    }
+
+    .navmenu.active {
+        display: flex;
+    }
+    .navmenu a {
+        padding: 10px 0;
+        width: 100%; /* Make each navigation item take up the full width */
+        text-align: center;
+    }
+    
+
+    #menu-icon {
+        display: block;
+    }
+    .nav-icon i {
+        display: none;
+    }
+
+    .main-home {
+        height: auto;
+    }
+
+    .down-arrow {
+        right: 5%;
+    }
+
+    .center-text h2 {
+        font-size: 24px;
+    }
+
+    .col-3 {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .product-text h5 {
+        font-size: 10px;
+    }
+
+    .heart-icon {
+        font-size: 16px;
+    }
+
+    .price h4 {
+        font-size: 14px;
+    }
+
+    .price p {
+        font-size: 12px;
+    }
+
+    .cart img {
+        width: 100%;
+    }
+
+    .update-cart {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Further adjustments for even smaller screens if needed */
+@media only screen and (max-width: 480px) {
+    .navmenu a {
+        font-size: 14px;
+    }
+
+    .nav-icon i {
+        font-size: 20px;
+    }
+
+    .main-btn {
+        padding: 15px 25px;
+    }
+
+    .down i {
+        font-size: 25px;
+        padding: 10px 10px;
+    }
+
+    .center-text h2 {
+        font-size: 20px;
+    }
+
+    .col-3 {
+        flex-basis: 100%;
+    }
+
+    .product-text h5 {
+        font-size: 8px;
+    }
+
+    .heart-icon {
+        font-size: 14px;
+    }
+
+    .price h4 {
+        font-size: 12px;
+    }
+
+    .price p {
+        font-size: 10px;
+    }
+
+    .cart h5 {
+        font-size: 12px;
+    }
+
+    .cart h4 {
+        font-size: 16px;
+    }
+
+    .cart p {
+        font-size: 12px;
+    }
+
+    .cart h6 {
+        font-size: 14px;
+    }
+
+    .contact-info p {
+        font-size: 12px;
+    }
+
+    .contact-info h4 {
+        font-size: 20px;
+    }
+
+    .CopyRight h6 {
+        font-size: 16px;
     }
 }
