@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        /* Your styling for the cart page */
+    </style>
+</head>
+<body>
+    <h1>Your Shopping Cart</h1>
+    <div id="cartItems">
+    </div>
+
+    <script>
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartContainer = document.getElementById('cartItems');
+        cartItems.forEach(item => {
+            const cartItemDiv = document.createElement('div');
+            cartItemDiv.innerHTML = `
+                <div class="cart-item">
+                    <img src="${item.image}" alt="${item.name}">
+                    <div class="cart-item-info">
+                        <h5>${item.name}</h5>
+                        <p>${item.price}</p>
+                    </div>
+                </div>
+            `;
+            cartContainer.appendChild(cartItemDiv);
+        });
+    </script>
+
+</body>
+</html>

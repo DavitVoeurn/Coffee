@@ -1,0 +1,83 @@
+/* Add your existing styles here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 90px;
+    background-color: #f4f4f4;
+}
+
+.product-detail {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-text h5 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 6px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon {
+    font-size: 20px;
+    color: #888;
+}
+
+.rating {
+    color: #ff8c00;
+}
+
+.price h4 {
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.product-description {
+    margin-top: 20px;
+}
+
+.product-actions {
+    margin-top: 20px;
+}
+
+.add-to-cart-btn {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #004080;
+}
